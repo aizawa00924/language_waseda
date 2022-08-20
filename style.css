@@ -11,11 +11,7 @@ Author URL: https://aizawa00924.sakura.ne.jp/portfolio/
   |_00_1_common_total
   |_00_2_header menu
 
-01_TOP
-
-
-
-
+  20220814_add_01_TOP
 
 */
 
@@ -32,6 +28,10 @@ Author URL: https://aizawa00924.sakura.ne.jp/portfolio/
     .pc {
         display: none !important;
     }
+}
+
+body {
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
 }
 
 .clearfix:after {
@@ -63,47 +63,6 @@ Author URL: https://aizawa00924.sakura.ne.jp/portfolio/
     margin-top: 48px;
     display: inline-block;
     width: 100%;
-}
-
-.btn {
-    position: relative;
-    display: inline-block;
-    padding: 0 0 0 16px;
-    color: #000;
-    vertical-align: middle;
-    text-decoration: none;
-    font-size: 15px;
-    left: 35%;
-}
-
-.btn {
-    float: right;
-    right: 28%;
-    background: #00559c;
-    padding: 10px;
-    left: unset;
-    width: 164px;
-}
-
-.btn a {
-    padding-bottom: 3px;
-    color: #fff;
-    font-size: 12px;
-    font-weight: bold;
-    display: block;
-}
-
-.btn a::before {
-    content: '';
-    display: block;
-    width: 6px;
-    height: 6px;
-    border-top: 2px solid #fff;
-    border-left: 2px solid #fff;
-    transform: rotate(135deg);
-    position: absolute;
-    right: 15px;
-    top: calc(50% - 5px);
 }
 
 .bg_top_business {
@@ -203,13 +162,6 @@ Author URL: https://aizawa00924.sakura.ne.jp/portfolio/
         width: 98%;
         margin: 64px auto 0;
     }
-
-    .btn {
-        float: right;
-        right: 0;
-        left: unset;
-    }
-
     .bg_top_business {
         width: 95%;
         margin: 81px auto;
@@ -227,13 +179,13 @@ Author URL: https://aizawa00924.sakura.ne.jp/portfolio/
 /*logo*/
 .header .inner #mobile-head .MainMenu_logo {
     display: block;
-    width: 130px;
+    width: 189px;
+    padding: 10px;
     height: 56px;
 }
 
 .header .inner #mobile-head .MainMenu_logo img {
     width: 168px;
-    padding: 15px 0 0 0;
 }
 
 .header .inner .nav_list ul li a {
@@ -371,7 +323,7 @@ Author URL: https://aizawa00924.sakura.ne.jp/portfolio/
     }
 
     .header .inner #mobile-head .MainMenu_logo {
-        max-width: 120px;
+        max-width: 180px;
         margin-left: 10px;
     }
 
@@ -567,7 +519,6 @@ Author URL: https://aizawa00924.sakura.ne.jp/portfolio/
     .header .inner #mobile-head .MainMenu_logo img {
         display: inline-block;
         width: 168px;
-        padding: 20px 8px;
     }
 
     .header .inner .head_contact {
@@ -588,51 +539,52 @@ Author URL: https://aizawa00924.sakura.ne.jp/portfolio/
 #head_wrap.fixed #global-nav ul li a {
     margin: 0;
 }
+.nav_list .gnavi__lists .navi01 a {
+    background-image: url(assets/images/menu_01.png);
+    width: 120px;
+    height: 56px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
     .nav_list .gnavi__lists .navi02 a {
-        background-image: url(assets/images/menu_intro.png);
-        width: 84px;
+        background-image: url(assets/images/menu_02.png);
+        width: 170px;
         height: 56px;
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .nav_list .gnavi__lists .navi03 a {
-        background-image: url(assets/images/menu_info.png);
-        width: 84px;
+        background-image: url(assets/images/menu_03.png);
+        width: 140px;
         height: 56px;
         background-size: contain;
         background-repeat: no-repeat;
     }
-
     .nav_list .gnavi__lists .navi04 a {
-        background-image: url(assets/images/menu_news.png);
-        width: 84px;
+        background-image: url(assets/images/menu_04.png);
+        width: 160px;
         height: 56px;
         background-size: contain;
         background-repeat: no-repeat;
     }
-
     .nav_list .gnavi__lists .navi05 a {
-        background-image: url(assets/images/menu_contact.png);
-        width: 87px;
+        background-image: url(assets/images/menu_05.png);
+        width: 100px;
         height: 56px;
         background-size: contain;
         background-repeat: no-repeat;
     }
-    .nav_list .gnavi__lists .navi02 a:hover {
-        background-image: url(assets/images/menu_intro_hover.png);
+    .nav_list .gnavi__lists .navi06 a {
+        background-image: url(assets/images/menu_06.png);
+        width: 100px;
+        height: 56px;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
-    .nav_list .gnavi__lists .navi03 a:hover {
-        background-image: url(assets/images/menu_info_hover.png);
+    .nav_list .gnavi__lists li a:hover {
+        opacity: 0.5;
     }
-    .nav_list .gnavi__lists .navi04 a:hover {
-        background-image: url(assets/images/menu_news_hover.png);
-    }
-    .nav_list .gnavi__lists .navi05 a:hover {
-        background-image: url(assets/images/menu_contact_hover.png);
-    }
-    
-    
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
@@ -661,9 +613,6 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-    font-family: "Roboto", sans-serif;
-}
 
 .sr-only {
     position: absolute;
@@ -709,65 +658,59 @@ body {
     min-width: initial;
     padding: 0.5rem;
 }
-
-.footer {
+/*common_footer*/
+.footer_wrapper {
+    background: #14152A;
+    margin-top: 80px;;
+}
+.footer_wrapper .footer {
     display: block;
     width: 100%;
-    padding: 8px;
-    background: #353535;
-}
-
-.footer .footer_address {
-    padding: 18px 0;
     color: #fff;
+    width: 340px;
+    padding: 48px 16px;
+}
+.footer_wrapper .footer .footer_school {
+    margin-bottom: 20px;
+}
+.footer_wrapper .footer .footer_school .japanese {
+    font-size: 18px;
+}
+.footer_wrapper .footer .footer_school .english {
+    color: #8c8c8c;
+    font-size: 14px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #444444;
+    margin-bottom: 20px;
+}
+.footer_wrapper .footer .footer_school .address {
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer_wrapper .footer .foot_group_introduce {
+    width: 220px;
     font-size: 12px;
-    background: #353535;
-    font-family: serif;
+    padding: 5px;
+    border: 0.5px solid #b91c1c;
+    color: #b91c1c;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
 }
-
-.footer .footer_address .footer_down {
-    text-align: left;
-}
-
-.footer .footer_address .footer_down ul {
-    margin-top: 24px;
-    display: flex;
-    justify-content: center;
-}
-
-.footer .footer_address .footer_down ul li {
-    width: 20%;
-}
-
-.footer .footer_address .footer_down ul li:first-child {
-    width: 12%;
-}
-
-.footer .footer_address .footer_down ul li a {
-    color: #fff;
-    font-family: sans-serif;
-
-}
-
-.footer .footer_address .footer_down ul li a span {
-    color: #50a6da;
-    display: block;
+.copyright {
     font-size: 10px;
+    text-align: center;
+    line-height: 1.2;
+    color: #969ea7;
+    padding: 5px 10px;
+    background: #1e2332;
 }
-
-
 
 .txt_large {
     font-size: 18px;
 }
 
-.footer .copyright {
-    font-size: 10px;
-    text-align: center;
-    line-height: 1.2;
-    color: #fff;
-    padding: 5px 10px;
-}
+
 
 .under_line {
     padding-bottom: 5px;
@@ -1493,7 +1436,7 @@ body {
 }
 
 .company_wrapper .btn {
-    float: right;
+    git config --list --show-origin;
     right: 25%;
     background: #ccc;
     padding: 10px;
@@ -1555,7 +1498,6 @@ body {
 
     .company_wrapper .in_wrapper .ph_out h2 {
         font-size: 1.3rem;
-        font-family: serif;
         text-align: left;
         margin: 0 20px;
         width: 50%;
@@ -2005,6 +1947,7 @@ body {
 
 #contents {
     min-height: 280px;
+    margin-top: 60px;
 }
 
 @media (min-width: 768px) {
@@ -2031,5 +1974,212 @@ body {
     }
     #thanks .btn {
         right: 43%;
+    }
+}
+
+/*  20220814_add
+   01_TOP 
+*/
+.consultup-service-section {
+    width: 100%;
+    padding: 96px 0;
+}
+.consultup-heading {
+    text-align: center;
+}
+
+.consultup-heading h3 {
+    font-size: 26px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.consultup-heading p {
+    font-size: 14px;
+}
+.consultup-service-section .row {
+    width: 100%;
+    padding: 48px 0;
+}
+.consultup-service-section .row .col-sm-3 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 32px 0;
+    background-size: cover;
+}.consultup-service-section .row .col-sm-3 .consultup-service-inner {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 64px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+.consultup-service-section .row .col-sm-3 .consultup-service-inner .ser-icon {
+    width: 48px;
+    margin: 0 auto;
+}
+.consultup-service-section .row .col-sm-3 .consultup-service-inner h3 {
+    font-size: 20px;
+    margin: 8px 0;
+    text-align: center;
+    font-weight: bold;
+}
+.consultup-service-section .row .col-sm-3 .consultup-service-inner p {
+    text-align: center;
+    font-weight: normal;
+}
+.consultup-service-section .row .col-sm-3 .consultup-service-inner a.btn {
+    text-align: center;
+    color: #fff;
+    background: #3098b7;
+    margin: 20px auto;
+    display: block;
+    padding: 8px 24px;
+    width: 160px;
+}
+.consultup-service-section .row .service-one {
+    background-image: url(assets/images/top_back01.jpg);
+} 
+.consultup-service-section .row .service-two {
+    background-image: url(assets/images/top_back02.jpg);
+} 
+.consultup-service-section .row .service-three {
+    background-image: url(assets/images/top_back03.jpg);
+} 
+.consultup-callout {
+    background-image: url(assets/images/top_background_second.png);
+    padding: 128px 0;
+    background-size: auto;
+}
+.consultup-callout h3 {
+    color: #fff;
+}
+.consultup-callout .top_column_showwindow {
+    width: 90%;
+    margin: 48px auto 0;
+
+}
+.consultup-callout .top_column_showwindow .small {
+    width: 44%;
+    margin: 8px;
+    display: inline-block;
+}
+.consultup-portfolio {
+    width: 90%;
+    padding: 80px 0;
+    margin: 0 auto;
+}
+.top_pro {
+    margin-top: 40px;
+    height: auto;
+    clear: both;
+    display: inline-block;
+}
+.top_pro .top_pro_wrapper {
+    width: 100%;
+    float: right;
+    position: relative;
+    top: 0;
+    margin-left: 0;
+    background: #fff;
+}
+.top_pro .top_pro_wrapper .top_pro_title {
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-top: 1px solid #3098b7;
+    color: #005772;
+    border-bottom: 1px solid #3098b7;
+    padding: 5px;
+    background: #d3f5ff;
+}
+.top_pro .top_pro_wrapper .top_pro_main {
+    text-align: left;
+    line-height: 1.6;
+    padding: 16px;
+    font-size: 16px;
+    color: #00212b;
+    margin: 0 0 32px;
+    border-bottom: 1px dotted #3098b7;
+}
+.top_pro .consultup-portfolio-block {
+    width: 100%;
+    height: auto;
+    position: initial;
+    margin: 0 auto;
+}
+.top_pro .consultup-portfolio-block img {
+    margin: 0 auto 16px;
+}
+.top_pro_message {
+    height: auto;
+    display: block;
+}
+.top_pro .top_pro_wrapper .top_pro_message .title {
+    color: #005772;
+    font-size: 22px;
+    border-left: 5px solid;
+    display: block;
+    text-align: left;
+    padding: 0 0 0 10px;
+    margin-bottom: 8px;
+}
+
+.top_pro .top_pro_wrapper .top_pro_message .contents {
+    margin-top: 10px;
+    text-align: left;
+    color: #333;
+    padding: 25px;
+    background: #ffeeef;
+    line-height: 1.6;
+    height: auto;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.consultup-banner {
+    width: 90%;
+    margin: 48px auto;
+}
+
+
+
+
+
+@media (min-width: 768px) { 
+    .consultup-service-section .row {
+        display: flex;
+        padding: 48px 0;
+        justify-content: center;
+    }
+    .consultup-service-section .row .col-sm-3 {
+        width: 25%;
+        margin:0 2%;
+    }
+    .consultup-callout {
+        background-image: url(assets/images/top_background_second.png);
+        padding: 140px 0;
+        background-size: cover;
+    }
+    .consultup-callout .top_column_showwindow {
+        width: 80%;
+        margin: 48px auto 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .consultup-callout .top_column_showwindow .small {
+        width: 23%;
+    }
+    .consultup-portfolio-block img {
+        max-width: 280px;
+        margin-bottom: 40px;
+    }
+    .top_pro .consultup-portfolio-block {
+        width: 25%;
+        float: left;
+    }
+    .top_pro .top_pro_wrapper {
+        width: 72%;
+    }
+    .top_pro .consultup-portfolio-block img {
+        width: 100%;
     }
 }
